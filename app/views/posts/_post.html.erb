@@ -1,4 +1,13 @@
-<li>
-  <span class="title"><%= post.title %></span>
-  <span class="content"><%= post.content %></span>
-</li>
+<tbody>
+  <tr>
+    <td id="date">
+      <span id="created_at">
+        </br><%= post.created_at.strftime("%d %B %Y") %>
+      </span>
+    </td>
+    <td id="title_and_content">
+      <span id="title"><%= post.title %></span></br>
+      <span id="content"><%= post.content %></span>
+    </td>
+  </tr>
+</tbody>

@@ -1,8 +1,8 @@
 @import "twitter/bootstrap/bootstrap";
 
 body { 
-	padding-top: 60px;
-	padding-left: 20px;
+	padding-top: 100px;
+	padding-left: 30px;
 }
 
 html {
@@ -45,11 +45,18 @@ textarea {
 // Example:
 // @linkColor: #ff0000;
 
+
+/* body overall */
+
 body { 
-	padding-top: 100px;
-	padding-left: 20px;
+	padding-top: 120px;
+  padding-left: 120px;
 	background-color: #FFFFFF;
 }
+
+
+/* navbar */
+
 .navbar-fixed-top {
 	position: fixed;
 	right: 0;
@@ -59,22 +66,55 @@ body {
 }
 
 .navbar-fixed-top .navbar-inner {
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 120px;
+	padding-right: 40px;
 	.border-radius(0);
 }
 
-.span11 {
-	padding-bottom: 100px;
+
+/* header */
+
+.span12 {
+	padding-bottom: 80px;
 }
 
-.span6 {
-	padding-top: 0px;	
+
+/* posts */
+
+.posts #date {
+  width: 30%;
+  vertical-align: top;
+  font-size: 85%;
 }
 
-.span2 {
-	padding-top:   0px;
+.posts #title {
+  text-align: center;
+  font-size: 150%;
 }
+
+/* homepage sidebar */
+
+#sidebar_header {
+  font-size: 125%;
+}
+
+
+/* pagination */
+
+.pagination-wrapper {
+  padding-top: 40px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.pagination {
+  font-size: 85%;
+}
+
+.pagination .disabled {
+  visibility: hidden;
+}
+
 
 
 @navbarBackground: #292929;

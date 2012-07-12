@@ -1,9 +1,26 @@
-<div class="container">
-  <% if @posts.any? %>
-    <ol class="posts">
-      <%= render @posts %>
-    </ol>
-    <%= will_paginate @posts %>
-  <% end %>
+<div class="row">
+  <div class="span12">
+    <h1>
+      <%= link_to image_tag("rails.png", alt:"Dan Koslow"), root_path %>
+      Dan Koslow
+    </h1>
+  </div>
+</div>
+<div class="row">
+  <div class="span8">
+    <% if @posts.any? %>
+      <table class="posts">
+        <%= render @posts %>
+      </table>
+      <div class="pagination-wrapper">
+        <%= will_paginate @posts, page_links: false, container: false %>
+      </div>
+    <% end %>
+  </div>
+  <div class="span3">
+    <div id="sidebar_header">About Me</div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+  <div class="span1"></div>
 </div>
 
