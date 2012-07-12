@@ -1,20 +1,13 @@
 @import "twitter/bootstrap/bootstrap";
 
 body { 
-	padding-top: 100px;
-	padding-left: 30px;
+/*	padding-top: 100px;
+	padding-left: 30px;*/
+  font-family: 'PT Sans', sans-serif;
 }
 
 html {
 	overflow-y: scroll;
-}
-
-section {
-	overflow: auto;
-}
-
-textarea {
-	resize: vertical;
 }
 
 @import "twitter/bootstrap/responsive";
@@ -49,9 +42,10 @@ textarea {
 /* body overall */
 
 body { 
-	padding-top: 120px;
+	padding-top: 80px;
   padding-left: 120px;
 	background-color: #FFFFFF;
+  font-family: 'PT Sans', sans-serif;
 }
 
 
@@ -75,27 +69,56 @@ body {
 /* header */
 
 .span12 {
-	padding-bottom: 80px;
+	padding-bottom: 40px;
+}
+
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 300%;
+  font-weight: 400;
 }
 
 
 /* posts */
 
+td {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
 .posts #date {
   width: 30%;
   vertical-align: top;
   font-size: 85%;
+  color: #b2aeb6;
+}
+
+.posts #title_and_content {
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .posts #title {
-  text-align: center;
-  font-size: 150%;
+  font-size: 275%;
+  line-height: 120%;
+  color: #0500cc;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 800;
 }
+
+.posts #content {
+  padding-bottom: 20px;
+}
+
 
 /* homepage sidebar */
 
+.span3 {
+  padding-top: 20px;
+}
+
 #sidebar_header {
   font-size: 125%;
+  text-align: center;
 }
 
 
@@ -103,12 +126,13 @@ body {
 
 .pagination-wrapper {
   padding-top: 40px;
+  padding-bottom: 20px;
   width: 250px;
   margin: 0 auto;
 }
 
 .pagination {
-  font-size: 85%;
+  font-size: 200%;
 }
 
 .pagination .disabled {
