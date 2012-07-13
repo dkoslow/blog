@@ -65,6 +65,11 @@ body {
 	.border-radius(0);
 }
 
+.nav li{
+  font-size: 125%;
+  padding-right: 20px;
+}
+
 
 /* header */
 
@@ -87,10 +92,10 @@ td {
 }
 
 .posts #date {
-  width: 30%;
+  width: 25%;
   vertical-align: top;
-  font-size: 85%;
   color: #b2aeb6;
+  padding-left: 10px;
 }
 
 .posts #title_and_content {
@@ -98,7 +103,7 @@ td {
 }
 
 .posts #title {
-  font-size: 275%;
+  font-size: 300%;
   line-height: 120%;
   color: #0500cc;
   font-family: 'PT Sans Narrow', sans-serif;
@@ -107,6 +112,7 @@ td {
 
 .posts #content {
   padding-bottom: 20px;
+  font-size: 125%
 }
 
 
@@ -121,22 +127,23 @@ td {
   text-align: center;
 }
 
+@media (max-width: 850px) {
+  .span3 {
+    visibility: hidden;
+  }
+}
+
 
 /* pagination */
 
-.pagination-wrapper {
+#pagination-wrapper {
   padding-top: 40px;
   padding-bottom: 20px;
+  text-align: center;
   width: 250px;
-  margin: 0 auto;
-}
-
-.pagination {
-  font-size: 200%;
-}
-
-.pagination .disabled {
-  visibility: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
 }
 
 

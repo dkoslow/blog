@@ -12,7 +12,7 @@
       <table class="posts">
         <%= render @posts %>
       </table>
-      <div class="pagination-wrapper">
+      <div id="pagination-wrapper">
         <%= will_paginate @posts, page_links: false, container: false %>
       </div>
     <% end %>
