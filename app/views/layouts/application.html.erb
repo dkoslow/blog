@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <link href='http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
   <title>Dan Koslow</title>
@@ -22,10 +22,11 @@
         </a>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "Home"%></li>
+            <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "Archives" %></li>
-            <li><%= link_to "About" %></li>
+            <li><%= link_to "RSS", about_path %></li>
             <li><%= link_to "Mobile" %></li>
+            <li><%= link_to "About", about_path %></li>
           </ul>
         </div>
       </div>

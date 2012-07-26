@@ -1,8 +1,8 @@
 @import "twitter/bootstrap/bootstrap";
 
 body { 
-/*	padding-top: 100px;
-	padding-left: 30px;*/
+	padding-top: 100px;
+	padding-left: 30px;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -70,6 +70,11 @@ body {
   padding-right: 20px;
 }
 
+@navbarBackground: #292929;
+@navbarBackgroundHighlight: #6f6f6f;
+@navbarText: #f6f6f6;
+@navbarLinkColor: #f6f6f6;
+
 
 /* header */
 
@@ -120,17 +125,33 @@ td {
 
 .span3 {
   padding-top: 20px;
+  padding-left: 40px;
 }
 
 #sidebar_header {
-  font-size: 125%;
-  text-align: center;
+  font-size: 175%;
+  text-align: left;
+  padding-top: 40px;
+  text-decoration: bold;
+
 }
 
 @media (max-width: 850px) {
   .span3 {
     visibility: hidden;
   }
+}
+
+#twitter-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#personal_links {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 125%;
 }
 
 
@@ -146,12 +167,14 @@ td {
   margin-left: -125px;
 }
 
+/* links */
+
+a:link {
+  color: #000000;
+  text-decoration: bold;
+}
 
 
-@navbarBackground: #292929;
-@navbarBackgroundHighlight: #6f6f6f;
-@navbarText: #f6f6f6;
-@navbarLinkColor: #f6f6f6;
 
 
 
