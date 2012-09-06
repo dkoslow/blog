@@ -11,7 +11,7 @@ gem 'pg', '0.12.2'
 gem 'jquery-rails'
 
 group :development do
-  gem 'annotate'
+  gem 'annotate', '~> 2.4.1.beta'
   gem 'pry-nav', '0.2.0'
   gem 'pry-rails', '0.1.6'
 end
