@@ -1,0 +1,14 @@
+<h1>Archive</h1></br>
+<div class="row">
+  <div class="span8">
+    <% if @posts.any? %>
+      <table class="archive">
+        <%= render @posts %>
+      </table>
+      <div id="pagination-wrapper">
+        <%= will_paginate @posts,
+            page_links: false, container: false %>
+      </div>
+    <% end %>
+  </div>
+</div>

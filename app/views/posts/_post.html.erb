@@ -2,12 +2,27 @@
   <tr>
     <td id="date">
       <span id="created_at">
-        </br><%= post.created_at.strftime("%d %B %Y") %>
+        <% if (params[:action] == "home") %>
+          </br><%= post.created_at.strftime("%d %B %Y") %>
+        <% else %>
+          <% nil %>
+        <% end %>
       </span>
     </td>
     <td id="title_and_content">
+      <% if (params[:action] == "index") %>
+        <%= post.created_at.strftime("%d %B %Y") %></br>
+      <% else %>
+        <% nil %>
+      <% end %>
       <span id="title"><%= post.title %></span></br></br>
-      <span id="content"><%= post.content %></span>
+      <span id="content">
+        <% if (params[:action] == "home") %>
+          <%= post.content %>
+        <% else %>
+          <% nil %>
+        <% end %>
+      </span>
     </td>
   </tr>
 </tbody>
