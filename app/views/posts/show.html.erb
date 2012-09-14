@@ -1,2 +1,33 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<div class="row">
+  <div class="span12">
+    <h1>
+      <%= link_to "Dan Koslow", root_path,
+        {style: 'color: black'} %>
+    </h1>
+    <h2>
+      <%= link_to "products, code, and sundry", root_path,
+        {style: 'color: black'} %>
+    </h2>
+  </div>
+</div>
+<div class="row">
+  <div class="span8">
+    <table class="posts">
+      <tbody>
+        <tr>
+          <td id="date">
+            <span id="created_at">
+              </br><%= @post.created_at.strftime("%d %B %Y") %>
+            </span>
+          </td>
+          <td id="title_and_content_for_show_page">
+            <span id="title"><%= @post.title%></span></br></br>
+            <span id="content">
+              <%= @post.content %>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </div>
+  </div>
+<div>
