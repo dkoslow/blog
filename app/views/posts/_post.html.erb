@@ -15,7 +15,8 @@
       <% else %>
         <% nil %>
       <% end %>
-      <span id="title"><%= post.title %></span></br></br>
+      <span id="title"><%= link_to post.title, post,
+        {style: 'color: #0500cc'}%></span></br></br>
       <span id="content">
         <% if (params[:action] == "home") %>
           <%= post.content %>
