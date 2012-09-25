@@ -1,0 +1,31 @@
+<% if signed_in? %>
+
+  <h1>You are currently signed in. </h1>
+
+  <h2><%= link_to "Sign out", signout_path, method: :delete %></h2>
+
+
+
+<% else %>
+
+  <% provide(:title, "Sign in") %>
+  <h1>Sign in</h1>
+
+  <div class="row">
+    <div class= "span6 offset3">
+      <div id="signin">
+        <%= form_for(:session, url: sessions_path) do |f| %>
+
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password %></br>
+
+        <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+<% end %>

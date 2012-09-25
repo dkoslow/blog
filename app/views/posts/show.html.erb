@@ -21,13 +21,23 @@
             </span>
           </td>
           <td id="title_and_content_for_show_page">
-            <span id="title"><%= @post.title%></span></br></br>
+            <span id="title"><%= link_to @post.title, @post,
+                             {style: 'color: #0500cc'} %></span></br></br>
             <span id="content">
               <%= @post.content %>
             </span>
           </td>
         </tr>
       </tbody>
+    </table>
+    <div class="post_actions_admin_buttons">
+      <% if signed_in? %>
+        <%= link_to "Edit post", edit_post_path(params[:post]),class: "btn btn-large btn-primary" %>
+        <%= link_to  "Delete post", @post, method: :delete, 
+                      data: { confirm: "Are you sure?" },
+                      class: "btn btn-large btn-primary" %>
+      <% end %>
+    </div>
     </div>
   </div>
 <div>

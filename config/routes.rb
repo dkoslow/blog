@@ -8,7 +8,13 @@ Blog::Application.routes.draw do
 
   match '/mobile', to: 'pages#mobile'
 
-  resources :posts, only: [:index, :show]
+  match '/signin', to: 'sessions#new'
+
+  match '/signout', to: 'sessions#destroy'
+
+  resources :posts, only: [:new, :create, :edit, :update, :index, :show, :destroy]
+
+  resources :sessions, only: [:new, :create, :destroy]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

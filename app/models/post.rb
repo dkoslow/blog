@@ -11,9 +11,9 @@ class Post < ActiveRecord::Base
 
   private
 
-  def create_slug
-    self.url_slug = title.parameterize
-  end
+    def create_slug
+      self.url_slug = title.parameterize
+    end
 end
 
 
