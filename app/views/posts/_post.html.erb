@@ -19,7 +19,7 @@
         {style: 'color: #0500cc'} %></span></br></br>
       <span id="content">
         <% if (params[:action] == "home") %>
-          <%= post.content %>
+          <%= raw(post.content) %>
         <% else %>
           <% nil %>
         <% end %>

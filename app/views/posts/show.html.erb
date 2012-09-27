@@ -24,7 +24,7 @@
             <span id="title"><%= link_to @post.title, @post,
                              {style: 'color: #0500cc'} %></span></br></br>
             <span id="content">
-              <%= @post.content %>
+              <%= raw(@post.content) %>
             </span>
           </td>
         </tr>

@@ -18,6 +18,8 @@ Blog::Application.routes.draw do
 
   resources :sessions, only: [:new, :create, :destroy]
 
+  mount Ckeditor::Engine => '/ckeditor'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
