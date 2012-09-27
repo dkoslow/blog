@@ -2,6 +2,8 @@ Blog::Application.routes.draw do
 
   root to: 'pages#home'
 
+  match '/archive', to: 'posts#index'
+
   match '/about', to: 'pages#about'
 
   match '/rss', to: 'pages#rss'
