@@ -10,8 +10,4 @@ class PagesController < ApplicationController
 
   def rss
   end
-
-  def mobile
-  end
-  
 end

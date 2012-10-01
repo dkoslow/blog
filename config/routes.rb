@@ -8,8 +8,6 @@ Blog::Application.routes.draw do
 
   match '/rss', to: 'pages#rss'
 
-  match '/mobile', to: 'pages#mobile'
-
   match '/signin', to: 'sessions#new'
 
   match '/signout', to: 'sessions#destroy'
