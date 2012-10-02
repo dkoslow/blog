@@ -9,6 +9,7 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "ckeditor/init" %>
+  <%= auto_discovery_link_tag(:rss, "http://dkoslow.com") %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -25,7 +26,7 @@
           <ul class="nav">
             <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "Archive", archive_path %></li>
-            <li><%= link_to "RSS", rss_path %></li>
+            <li><%= link_to "RSS", "posts.rss" %></li>
             <li><%= link_to "About", about_path %></li>
           </ul>
         </div>

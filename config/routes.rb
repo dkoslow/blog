@@ -6,8 +6,6 @@ Blog::Application.routes.draw do
 
   match '/about', to: 'pages#about'
 
-  match '/rss', to: 'pages#rss'
-
   match '/signin', to: 'sessions#new'
 
   match '/signout', to: 'sessions#destroy'
