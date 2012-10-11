@@ -1,7 +1,7 @@
 @import "twitter/bootstrap/bootstrap";
 
 body { 
-	padding-top: 80px;
+	padding-top: 78px;
 	padding-left: 30px;
   font-family: 'PT Sans', sans-serif;
 }
@@ -44,7 +44,7 @@ html {
 /* body overall */
 
 body { 
-	padding-top: 100px;
+	padding-top: 102px;
   padding-left: 120px;
 	background-color: #FFFFFF;
   font-family: 'PT Sans', sans-serif;
@@ -63,25 +63,28 @@ body {
 
 .navbar-fixed-top .navbar-inner {
 	padding-left: 120px;
-	padding-right: 40px;
+	padding-right: 42px;
 	.border-radius(0);
 }
 
 .nav li{
   font-size: 150%;
-  padding-right: 20px;
+  padding-right: 18px;
 }
 
-@navbarBackground: #292929;
-@navbarBackgroundHighlight: #6f6f6f;
-@navbarText: #f6f6f6;
-@navbarLinkColor: #f6f6f6;
+.nav a:hover {
+  border-bottom: none;
+}
+
+@navbarBackground: black;
+@navbarText: white;
+@navbarLinkColor: white;
 
 
 /* header */
 
 .span12 {
-	padding-bottom: 40px;
+	padding-bottom: 42px;
 }
 
 h1 {
@@ -92,59 +95,54 @@ h1 {
 }
 
 
-h2 {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 200%;
-  font-weight: 400;
-  color: black;
-}
-
-
 /* posts */
 
-.posts td {
-  padding-top: 20px;
-  padding-bottom: 60px;
+.posts #content a:hover {
+  border-bottom: 1px dotted red;
 }
 
-.posts #date {
-  width: 25%;
-  vertical-align: top;
+.posts #post_meta {
   color: #b2aeb6;
-  padding-left: 10px;
+  float: left;
+  width: 25%;
+  margin-top: 24px;
 }
 
-.posts #title_and_content {
-  border-bottom: 1px solid #e8e8e8;
+.posts #post_wrapper {
+  margin-bottom: 24px;
+  clear: both;
 }
 
 .posts #title {
   font-size: 300%;
-  line-height: 120%;
-  color: #0500cc;
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 100%;
 }
 
 .posts #content {
-  padding-bottom: 20px;
-  font-size: 125%
+  margin-bottom: 24px;
+  font-size: 125%;
+  line-height: 125%
+}
+
+.posts #title_and_content {
+  width: 75%;
+  float: right;
+  border-bottom: 1px solid #e8e8e8;
+  margin-top: 24px;
 }
 
 .post_actions_admin_buttons {
   text-align: center;
 }
 
+
 /* archive */
 
-.archive td {
-  height: 30px;
-}
-
-.archive #date {
-  width: 25%;
-  vertical-align: top;
-  padding-left: 10px;
+.archive {
+  padding-top: 24px;
 }
 
 .archive #title {
@@ -153,52 +151,16 @@ h2 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 400;
   vertical-align: top;
+  padding-bottom: 12px;
 }
-
-
-/* homepage sidebar */
-
-.span3 {
-  padding-top: 20px;
-  padding-left: 40px;
-}
-
-#sidebar_header {
-  font-size: 125%;
-  text-align: left;
-  padding-top: 40px;
-  color: #333333;
-}
-
-@media (max-width: 850px) {
-  .span3 {
-    visibility: hidden;
-  }
-}
-
-#twitter-button {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-#personal_links {
-  margin-bottom: 10px;
-  text-align: left;
-  font-size: 125%;
-}
-
 
 /* pagination */
 
 #pagination-wrapper {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  text-align: center;
-  width: 250px;
-  position: absolute;
-  left: 50%;
-  margin-left: -125px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: right;
+  clear: both;
 }
 
 /* links */
@@ -210,8 +172,8 @@ a:hover {
 /* about page */
 
 #header_image_div {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 #header_image {
@@ -223,26 +185,23 @@ a:hover {
   font-size: 125%;
 }
 
-#about_sidebar {
-  padding-top: 40px;
-}
 
 /* forms */
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  padding: 10px;
+  padding: 12px;
   height: auto !important;
-  margin-bottom: 20px;
-  width: 100%;
+  margin-bottom: 24px;
+  width: 60%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .field {
-  margin-top: 20px;
-  width: 100%;
+  margin-top: 24px;
+  width: 60%;
 }
 
 #signin {
@@ -254,8 +213,8 @@ input, textarea, select, .uneditable-input {
 .debug_dump {
   clear: both;
   float: left;
-  width: 100%;
-  margin-top: 45px;
+  width: 60%;
+  margin-top: 48px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

@@ -4,31 +4,21 @@
   </div>
 </div>
 <div class="row">
+  <div class="span2">
+  </div>
   <div class="span8">
-    <% if @posts.any? %>
-      <table class="posts">
-        <%= render @posts %>
-      </table>
-      <div id="pagination-wrapper">
-        <%= will_paginate @posts, page_links: false, container: false %>
-      </div>
-    <% end %>
-  </div>
-  <div class="span3">
-    <div id="sidebar_header">Find Me:</div>
-    <div id="twitter-button">
-      <a href="https://twitter.com/dankoslow" class="twitter-follow-button" data-show-count="false">Follow @dankoslow</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-      </script>
-    </div>
-    <div id="personal_links">
-      <a href="https://www.twitter.com/dankoslow/">Twitter</a></br>
-      <a href="https://www.linkedin.com/in/dkoslow">Linkedin</a>
-      </br>
-      <a href="https://github.com/dkoslow">Github</a></br>
-      <a href="#">Tumblr</a>
+    <div id="main">
+      <% if @posts.any? %>
+        <div class="posts">
+          <%= render @posts %>
+        </div>
+        <div id="pagination-wrapper">
+          <%= will_paginate @posts, page_links: false, container: false %>
+        </div>
+      <% end %>
     </div>
   </div>
-  <div class="span1"></div>
+  <div class="span2">
+  </div>
 </div>
 

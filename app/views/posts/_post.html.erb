@@ -1,29 +1,16 @@
-<tbody>
-  <tr>
-    <td id="date">
-      <span id="created_at">
-        <% if (params[:action] == "home") %>
-          </br><%= post.created_at.strftime("%d %B %Y") %>
-        <% else %>
-          <% nil %>
-        <% end %>
-      </span>
-    </td>
-    <td id="title_and_content">
-      <% if (params[:action] == "index") %>
-        <%= post.created_at.strftime("%d %B %Y") %></br>
+<div id="post_wrapper">
+  <div id="post_meta">
+    <%= post.created_at.strftime("%d %B %Y") %>
+  </div>
+  <div id="title_and_content">
+    <div id="title"><%= link_to post.title, post%>
+    </div>
+    <div id="content">
+      <% if (params[:action] == "home") %>
+        <%= raw(post.content) %>
       <% else %>
         <% nil %>
-      <% end %>
-      <span id="title"><%= link_to post.title, post,
-        {style: 'color: #0500cc'} %></span></br></br>
-      <span id="content">
-        <% if (params[:action] == "home") %>
-          <%= raw(post.content) %>
-        <% else %>
-          <% nil %>
-        <% end %>
-      </span>
-    </td>
-  </tr>
-</tbody>
+      <% end %> 
+    </div>
+  </div>
+</div>
