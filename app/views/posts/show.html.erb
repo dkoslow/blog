@@ -1,36 +1,22 @@
-<div class="row">
-  <div class="span12">
-    <%= render 'pages/header' %>
-  </div>
-</div>
-<div class="row">
-  <div class="span8">
-    <table class="posts">
-      <tbody>
-        <tr>
-          <td id="date">
-            <span id="created_at">
-              </br><%= @post.created_at.strftime("%d %B %Y") %>
-            </span>
-          </td>
-          <td id="title_and_content_for_show_page">
-            <span id="title"><%= link_to @post.title, @post,
-                             {style: 'color: #0500cc'} %></span></br></br>
-            <span id="content">
-              <%= raw(@post.content) %>
-            </span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="post_actions_admin_buttons">
+<div class="posts">
+  <div id="post_wrapper">
+    <div id="post_meta">
+      <%= @post.created_at.strftime("%d %B %Y") %>
+    </div>
+    <div id="title_and_content">
+      <div id="title"><%= link_to @post.title, @post%>
+      </div>
+      <div id="content">
+        <%= raw(@post.content) %>
+      </div>
+      <div class="post_actions_admin_buttons">
       <% if signed_in? %>
         <%= link_to "Edit post", edit_post_path(params[:post]),class: "btn btn-large btn-primary" %>
         <%= link_to  "Delete post", @post, method: :delete, 
                       data: { confirm: "Are you sure?" },
                       class: "btn btn-large btn-primary" %>
       <% end %>
-    </div>
+      </div>
     </div>
   </div>
-<div>
+</div>

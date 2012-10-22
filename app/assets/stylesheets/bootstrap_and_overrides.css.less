@@ -1,7 +1,7 @@
 @import "twitter/bootstrap/bootstrap";
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 html {
@@ -43,7 +43,7 @@ html {
 
 body { 
 	background-color: #FFFFFF;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 
@@ -59,9 +59,10 @@ body {
 	.border-radius(0);
 }
 
-.nav li{
-  font-size: 150%;
+.nav li {
+  font-size: 120%;
   margin-right: 18px;
+  font-family: 'Georgia', serif;
 }
 
 .nav a:hover {
@@ -81,10 +82,18 @@ body {
 }
 
 h1 {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 300%;
-  font-weight: 800;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 190%;
   color: black;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-family: 'Georgia', serif;
+  font-size: 150%;
+  margin-bottom: 18px;
 }
 
 
@@ -102,49 +111,56 @@ h1 {
 }
 
 .posts #post_wrapper {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   clear: both;
 }
 
 .posts #title {
-  font-size: 300%;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 800;
+  font-size: 200%;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
   margin-bottom: 18px;
   line-height: 100%;
 }
 
 .posts #content {
-  margin-bottom: 24px;
-  font-size: 125%;
-  line-height: 125%
+  margin-bottom: 30px;
+  font-size: 110%;
+  line-height: 1.4em;
+}
+
+.posts #content a:link {
+  font-weight: bold;
+  border-bottom: 1px dotted black;
 }
 
 .posts #title_and_content {
   width: 75%;
   float: right;
-  border-bottom: 1px solid #e8e8e8;
   margin-top: 18px;
 }
 
-.post_actions_admin_buttons {
-  text-align: center;
+#main .posts #title_and_content {
+  border-bottom: 1px solid #e8e8e8;
 }
 
 
 /* archive */
 
-.archive {
-  padding-top: 24px;
+.archive #title {
+  font-size: 140%;
+  line-height: 1.4em;
+  font-family: 'Georgia', sans-serif;
+  vertical-align: top;
+  margin-bottom: 18px;
 }
 
-.archive #title {
-  font-size: 150%;
-  line-height: 120%;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 400;
-  vertical-align: top;
-  padding-bottom: 12px;
+.archive {
+  margin-top: 18px;
+}
+
+.archive a:hover {
+  border-bottom: 1px dotted black;
 }
 
 /* pagination */
@@ -152,8 +168,17 @@ h1 {
 #pagination-wrapper {
   padding-top: 24px;
   padding-bottom: 24px;
-  text-align: right;
+  text-align: center;
   clear: both;
+}
+
+#pagination-wrapper a:link {
+  font-weight: bold;
+}
+
+#pagination-wrapper a:hover {
+  font-weight: bold;
+  border-bottom: 1px dotted black;
 }
 
 /* links */
@@ -162,22 +187,27 @@ a:hover {
   text-decoration: none;
 }
 
+
 /* about page */
 
-#header_image_div {
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
 #header_image {
+  margin-bottom: 18px;
   height: 140px;
   width: 120px;
 }
 
 #about_text {
-  font-size: 125%;
+  font-size: 110%;
+  line-height: 1.4em;
 }
 
+#about_text a:link {
+  font-weight: bold;
+}
+
+#about_text a:hover {
+  border-bottom: 1px dotted black;
+}
 
 /* forms */
 
@@ -186,7 +216,7 @@ input, textarea, select, .uneditable-input {
   padding: 12px;
   height: auto !important;
   margin-bottom: 24px;
-  width: 60%;
+  width: 80%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -194,11 +224,11 @@ input, textarea, select, .uneditable-input {
 
 .field {
   margin-top: 24px;
-  width: 60%;
+  width: 80%;
 }
 
 #signin {
-  width: 60%;
+  width: 80%;
 }
 
 /* debug */
@@ -206,7 +236,7 @@ input, textarea, select, .uneditable-input {
 .debug_dump {
   clear: both;
   float: left;
-  width: 60%;
+  width: 100%;
   margin-top: 48px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

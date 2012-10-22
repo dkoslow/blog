@@ -6,10 +6,8 @@
     <div id="title"><%= link_to post.title, post%>
     </div>
     <div id="content">
-      <% if (params[:action] == "home") %>
+      <% if (params[:action] != "index") %>
         <%= raw(post.content) %>
-      <% else %>
-        <% nil %>
       <% end %> 
     </div>
   </div>

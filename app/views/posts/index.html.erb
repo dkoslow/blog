@@ -1,14 +1,12 @@
-<h1>Archive</h1>
-<div class="row">
-  <div class="span8">
-    <% if @posts.any? %>
-      <div class="archive">
-        <%= render @posts %>
-      </div>
-      <div id="pagination-wrapper">
-        <%= will_paginate @posts,
-            page_links: false, container: false %>
-      </div>
-    <% end %>
-  </div>
+<h2>Archive</h2>
+<div class="archive_wrapper">
+  <% if @posts.any? %>
+    <div class="archive">
+      <%= render @posts %>
+    </div>
+    <div id="pagination-wrapper">
+      <%= will_paginate @posts,
+          page_links: false, container: false %>
+    </div>
+  <% end %>
 </div>
