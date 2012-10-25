@@ -1,17 +1,16 @@
-<h1 class="post"> Create a post </h1>
-<%= form_for @post do |f| %>
-  <div class="field">
-    <%= f.label :title %></br>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :content %></br>
-    <%= f.cktext_area :content, toolbar: 'Full' %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Create post", class: "btn btn-large btn-primary" %>
-  </div>
-<% end %>
-
-
-
+<div class="post">
+  <h2> Create a post </h1>
+  <%= form_for @post do |f| %>
+    <div class="field">
+      <%= f.label :title %></br>
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :content %></br>
+      <%= f.cktext_area :content, toolbar: 'Full' %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Create post", class: "btn btn-large btn-primary" %>
+    </div>
+  <% end %>
+</div>
