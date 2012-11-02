@@ -11,6 +11,7 @@ gem 'pg', '0.12.2'
 gem 'jquery-rails'
 gem "ckeditor", "3.7.1"
 gem 'heroku'
+gem 'thin'
 
 group :development do
   gem 'annotate', '~> 2.4.1.beta'
