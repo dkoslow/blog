@@ -45,6 +45,7 @@ GEM
     ckeditor (3.7.1)
       mime-types
       orm_adapter
+    cocaine (0.4.2)
     coderay (1.0.7)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -125,6 +126,12 @@ GEM
     netrc (0.7.5)
     nokogiri (1.5.5)
     orm_adapter (0.4.0)
+    paperclip (3.3.1)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.4.0)
+      mime-types
     pg (0.12.2)
     polyglot (0.3.3)
     pry (0.9.8.4)
@@ -235,6 +242,7 @@ DEPENDENCIES
   guard-spork (= 0.3.2)
   heroku
   jquery-rails
+  paperclip
   pg (= 0.12.2)
   pry-nav (= 0.2.0)
   pry-rails (= 0.1.6)

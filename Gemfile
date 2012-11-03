@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem "ckeditor", "3.7.1"
 gem 'heroku'
 gem 'thin'
+gem 'paperclip'
 
 group :development do
   gem 'annotate', '~> 2.4.1.beta'
