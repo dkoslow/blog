@@ -1,5 +1,5 @@
 development:
-  bucket: dkoslowblogdevelopment
+  bucket: dkoslow-blog-development
   access_key_id: 'AKIAJACUC52KL5LEONTQ'
   secret_access_key: ENV['S3_SECRET_ACCESS_KEY']
 test:

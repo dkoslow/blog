@@ -6,6 +6,6 @@ CarrierWave.configure do |config|
     :aws_secret_access_key  => ENV['S3_SECRET_ACCESS_KEY']
   }
 
-  config.fog_directory  = "dkoslow_blog_#{Rails.env}"
+  config.fog_directory  = "dkoslow-blog-#{Rails.env}"
   config.fog_public     = true
 end
