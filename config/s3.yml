@@ -1,0 +1,12 @@
+development:
+  bucket: dkoslowblogdevelopment
+  access_key_id: 'AKIAJACUC52KL5LEONTQ'
+  secret_access_key: ENV['S3_SECRET_ACCESS_KEY']
+test:
+  bucket: dkoslow-blog-test
+  access_key_id: 'AKIAJACUC52KL5LEONTQ'
+  secret_access_key: ENV['S3_SECRET_ACCESS_KEY']
+production:
+  bucket: dkoslow-blog-production
+  access_key_id: 'AKIAJACUC52KL5LEONTQ'
+  secret_access_key: ENV['S3_SECRET_ACCESS_KEY']
