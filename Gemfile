@@ -3,16 +3,20 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+
 gem 'rails', '3.2.1'
+gem "ckeditor", "3.7.1"
+gem 'aws-s3'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
-gem 'will_paginate', '>3.0'
-gem 'pg', '0.12.2'
-gem 'jquery-rails'
-gem "ckeditor", "3.7.1"
+gem 'fog'
 gem 'heroku'
+gem 'jquery-rails'
+gem "carrierwave"
+gem "mini_magick"
+gem 'pg', '0.12.2'
 gem 'thin'
-gem 'paperclip'
+gem 'will_paginate', '>3.0'
 
 group :development do
   gem 'annotate', '~> 2.4.1.beta'
