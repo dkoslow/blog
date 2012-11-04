@@ -1,8 +1,8 @@
-<div id="post_wrapper">
-  <div id="post_meta">
+<div id="post_wrapper" class="row">
+  <div id="post_meta" class="span4">
     <%= post.created_at.strftime("%d %B %Y") %>
   </div>
-  <div id="title_and_content">
+  <div id="title_and_content" class="span8">
     <div id="title"><%= link_to post.title, post%>
     </div>
     <div id="content">
