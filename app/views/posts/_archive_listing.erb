@@ -1,0 +1,9 @@
+<div id="post_wrapper">
+  <div id="post_meta">
+    <%= archive_listing.created_at.strftime("%d %B %Y") %>
+  </div>
+  <div id="title_and_content">
+    <div id="title"><%= link_to archive_listing.title, archive_listing%>
+    </div>
+  </div>
+</div>

@@ -6,9 +6,7 @@
     <div id="title"><%= link_to post.title, post%>
     </div>
     <div id="content">
-      <% if (params[:action] != "index") %>
-        <%= raw(post.content) %>
-      <% end %> 
+      <%= raw(post.content) %>
     </div>
   </div>
 </div>
