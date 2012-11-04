@@ -13,7 +13,7 @@ class PostsController < ApplicationController
       redirect_to root_path
     else
       flash.now[:error] = "Post creation unsuccessful."
-      render 'post/new'
+      render :new
     end
   end
 
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
       redirect_to @post
     else
       flash.now[:error] = "Post update unsuccessful."
-      render 'edit'
+      render :edit
     end
   end
 
