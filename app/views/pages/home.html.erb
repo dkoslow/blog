@@ -4,8 +4,20 @@
       <%= render @posts %>
     </div>
     <div id="pagination-wrapper">
-      <%= will_paginate @posts, page_links: false, container: false %>
+      <div id="previous">
+        <% if @posts.previous_page %>
+          <%= link_to "<< Previous", params.merge(page: @posts.previous_page) %>
+        <% end %>
+      </div>
+      <div id="next">
+        <% if @posts.next_page %>
+          <%= link_to "Next >>", params.merge(page: @posts.next_page) %>
+        <% end %>
+      </div>
     </div>
   <% end %>
+</div>
+<div id="about" class="well">
+  <%= render partial: "about" %>
 </div>
       

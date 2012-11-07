@@ -1,7 +1,7 @@
 @import "twitter/bootstrap/bootstrap";
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 html {
@@ -43,7 +43,7 @@ html {
 
 body { 
 	background-color: #FFFFFF;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 
@@ -61,8 +61,8 @@ body {
 
 .nav li {
   font-size: 100%;
-  margin-right: 18px;
-  font-family: 'Georgia', serif;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .nav a:hover {
@@ -82,7 +82,6 @@ body {
 }
 
 h1 {
-  font-family: 'Georgia', serif;
   font-size: 130%;
   color: black;
   margin-top: 18px;
@@ -92,9 +91,9 @@ h1 {
 
 h2 {
   margin-top: 30px;
-  font-family: 'Arial', sans-serif;
-  font-size: 130%;
+  font-size: 100%;
   margin-bottom: 12px;
+  font-weight: bold;
 }
 
 
@@ -121,9 +120,8 @@ h2 {
 
 .posts #title {
   font-size: 130%;
-  font-family: 'Georgia', serif;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   line-height: 100%;
 }
 
@@ -152,9 +150,9 @@ h2 {
 .archive #title {
   font-size: 100%;
   line-height: 1.4em;
-  font-family: 'Georgia', sans-serif;
   vertical-align: top;
   margin-bottom: 18px;
+  font-weight: bold;
 }
 
 .archive {
@@ -176,8 +174,15 @@ h2 {
 #pagination-wrapper {
   padding-top: 24px;
   padding-bottom: 24px;
-  text-align: center;
-  clear: both;
+}
+
+#pagination-wrapper #previous {
+  text-align: left;
+  margin-left: 200px;
+}
+
+#pagination-wrapper #next {
+  text-align: right;
 }
 
 #pagination-wrapper a:link {
@@ -196,17 +201,30 @@ a:hover {
 }
 
 
-/* about page */
+/* about partial */
 
-#header_image {
+#about {
+  margin-left: 200px;
+  margin-top: 24px;
+}
+
+#about h2 {
+  margin-top: 0px;
+  line-height: 100%;
+}
+
+#about_image {
   margin-bottom: 18px;
-  height: 112px;
-  width: 96px;
+  height: 63px;
+  width: 54px;
+  float: left;
+  padding-right: 24px;
 }
 
 #about_text {
   font-size: 100%;
   line-height: 1.4em;
+  margin-left: 24px;
 }
 
 #about_text a:link {
