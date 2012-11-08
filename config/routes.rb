@@ -4,7 +4,7 @@ Blog::Application.routes.draw do
 
   match '/archive', to: 'posts#index'
 
-  match '/about', to: 'pages#about'
+  # match '/about', to: 'pages#about'
 
   match '/signin', to: 'sessions#new'
 

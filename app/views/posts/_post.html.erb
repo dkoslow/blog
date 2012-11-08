@@ -1,12 +1,13 @@
-<div id="post_wrapper" class="row">
-  <div id="post_meta" class="span2">
-    <%= post.created_at.strftime("%d %B %Y") %>
-  </div>
-  <div id="title_and_content" class="span6">
+<div id="post_wrapper">
+  <div id="title_and_content">
     <div id="title"><%= link_to post.title, post%>
     </div>
     <div id="content">
       <%= raw(post.content) %>
+    </div>
+    <div id="post_meta">
+      <i class="icon-time"></i>
+      Posted: <%= post.created_at.strftime("%d %B %Y") %>
     </div>
   </div>
 </div>

@@ -52,21 +52,31 @@ body {
 .navbar {
 	right: 0;
 	left: 0;
-	margin-bottom: 0;
+}
+
+.navbar .nav li a:hover {
+  background-color: #903;
 }
 
 .navbar .navbar-inner {
 	.border-radius(0);
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .nav li {
   font-size: 100%;
-  margin-right: 8px;
-  margin-left: 8px;
+  width: 72px;
+  text-align: center;
 }
 
 .nav a:hover {
   border-bottom: none;
+}
+
+.navbar .divider-vertical {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 @navbarBackground: black;
@@ -82,36 +92,39 @@ body {
 }
 
 h1 {
-  font-size: 130%;
+  font-size: 170%;
   color: black;
   margin-top: 18px;
   border-top: 1px solid black;
   line-height: 72px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+h1 a:hover {
+  border-bottom: none;
 }
 
 h2 {
   margin-top: 30px;
-  font-size: 100%;
+  font-size: 130%;
   margin-bottom: 12px;
   font-weight: bold;
+  font-family: 'Georgia', serif;
 }
 
 
 /* posts */
 
 #main {
-  margin-top: 18px;
-}
-
-.posts #content a:hover {
-  border-bottom: 1px dotted red;
+  margin-top: 36px;
 }
 
 .posts #post_meta {
   color: #b2aeb6;
-  margin-top: 18px;
-  font-size: 100%;
-  font-style: italic;
+  margin-top: 24px;
+  font-size: 75%;
+  margin-bottom: 24px;
 }
 
 .posts #post_wrapper {
@@ -120,24 +133,24 @@ h2 {
 
 .posts #title {
   font-size: 130%;
-  font-weight: bold;
   margin-bottom: 18px;
   line-height: 100%;
+  font-family: 'Georgia', serif;
+}
+
+.posts #title a:hover {
+  text-decoration: none;
+  color: #903;
 }
 
 .posts #content {
-  margin-bottom: 30px;
-  font-size: 100%;
+  margin-bottom: 18px;
+  font-size: 100%;  
   line-height: 1.4em;
 }
 
-.posts #content a:link {
-  font-weight: bold;
-  border-bottom: 1px dotted black;
-}
-
 .posts #title_and_content {
-  margin-top: 18px;
+  margin-top: 30px;
 }
 
 #main .posts #title_and_content {
@@ -152,15 +165,11 @@ h2 {
   line-height: 1.4em;
   vertical-align: top;
   margin-bottom: 18px;
-  font-weight: bold;
+  font-family: 'Georgia', serif;
 }
 
 .archive {
   margin-top: 12px;
-}
-
-.archive a:hover {
-  border-bottom: 1px dotted black;
 }
 
 .archive #post_meta {
@@ -178,39 +187,25 @@ h2 {
 
 #pagination-wrapper #previous {
   text-align: left;
-  margin-left: 200px;
+  float: left;
 }
 
 #pagination-wrapper #next {
   text-align: right;
 }
 
-#pagination-wrapper a:link {
-  font-weight: bold;
-}
-
-#pagination-wrapper a:hover {
-  font-weight: bold;
-  border-bottom: 1px dotted black;
-}
-
-/* links */
-
-a:hover {
-  text-decoration: none;
-}
-
 
 /* about partial */
 
 #about {
-  margin-left: 200px;
   margin-top: 24px;
 }
 
-#about h2 {
+#about_header {
   margin-top: 0px;
   line-height: 100%;
+  font-weight: bold;
+  margin-bottom: 12px;
 }
 
 #about_image {
@@ -225,14 +220,6 @@ a:hover {
   font-size: 100%;
   line-height: 1.4em;
   margin-left: 24px;
-}
-
-#about_text a:link {
-  font-weight: bold;
-}
-
-#about_text a:hover {
-  border-bottom: 1px dotted black;
 }
 
 /* forms */
@@ -256,6 +243,18 @@ input, textarea, select, .uneditable-input {
 
 #signin {
   width: 80%;
+}
+
+/* links */
+
+a:link {
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #903;
+  border-bottom: 1px dotted #903;
 }
 
 /* debug */
