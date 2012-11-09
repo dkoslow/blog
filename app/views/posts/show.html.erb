@@ -1,25 +1,27 @@
-<div class="posts">
-  <div id="post_wrapper">
-    <div id="title_and_content">
-      <div id="title"><%= link_to @post.title, @post%>
-      </div>
-      <div id="content">
-        <%= raw(@post.content) %>
-      </div>
-      <div id="post_meta">
-        <i class="icon-time"></i>
-        Posted: <%= @post.created_at.strftime("%d %B %Y") %>
-      </div>
-      <div id="about" class="well">
-        <%= render partial: "pages/about" %>
-      </div>
-      <div class="post_actions_admin_buttons">
-      <% if signed_in? %>
-        <%= link_to "Edit post", edit_post_path(params[:post]),class: "btn btn-large btn-primary" %>
-        <%= link_to  "Delete post", @post, method: :delete, 
-                      data: { confirm: "Are you sure?" },
-                      class: "btn btn-large btn-primary" %>
-      <% end %>
+<div class="main">
+  <div class="posts">
+    <div id="post_wrapper">
+      <div id="title_and_content">
+        <div id="title"><%= link_to @post.title, @post%>
+        </div>
+        <div id="content">
+          <%= raw(@post.content) %>
+        </div>
+        <div id="post_meta">
+          <i class="icon-time"></i>
+          Posted: <%= @post.created_at.strftime("%d %B %Y") %>
+        </div>
+        <div id="about" class="well">
+          <%= render partial: "pages/about" %>
+        </div>
+        <div class="post_actions_admin_buttons">
+        <% if signed_in? %>
+          <%= link_to "Edit post", edit_post_path(params[:post]),class: "btn btn-large btn-primary" %>
+          <%= link_to  "Delete post", @post, method: :delete, 
+                        data: { confirm: "Are you sure?" },
+                        class: "btn btn-large btn-primary" %>
+        <% end %>
+        </div>
       </div>
     </div>
   </div>

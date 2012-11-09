@@ -36,14 +36,13 @@ html {
 // Example:
 // @linkColor: #ff0000;
 
-@linkColor: #333333;
-
 
 /* body overall */
 
 body { 
 	background-color: #FFFFFF;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  color: #503E2B;
 }
 
 
@@ -52,10 +51,11 @@ body {
 .navbar {
 	right: 0;
 	left: 0;
+  margin-bottom: 0px;
 }
 
 .navbar .nav li a:hover {
-  background-color: #903;
+  background-color: #E0671B;
 }
 
 .navbar .navbar-inner {
@@ -77,11 +77,12 @@ body {
 .navbar .divider-vertical {
   margin-left: 0px;
   margin-right: 0px;
+  background-color: white;
 }
 
-@navbarBackground: black;
-@navbarText: white;
-@navbarLinkColor: white;
+@navbarBackground: #503E2B;
+@navbarText: #E8E8E8;
+@navbarLinkColor: #E8E8E8;
 
 
 /* header */
@@ -92,13 +93,16 @@ body {
 }
 
 h1 {
-  font-size: 170%;
-  color: black;
+  font-size: 130%;
   margin-top: 18px;
-  border-top: 1px solid black;
-  line-height: 72px;
+ /* margin-bottom: 9px;*/
+  border-top: 2px solid #808094;
+/*  border-bottom: 1px solid #808094;*/
+  line-height: 66px;
+/*  line-height: 54px;*/
   text-align: center;
   font-family: 'Georgia', serif;
+ /* margin-bottom: 6px;*/
 }
 
 h1 a:hover {
@@ -108,20 +112,24 @@ h1 a:hover {
 h2 {
   margin-top: 30px;
   font-size: 130%;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   font-weight: bold;
   font-family: 'Georgia', serif;
+  line-height: 100%;
 }
 
 
 /* posts */
 
-#main {
-  margin-top: 36px;
+.main {
+  /*margin-top: 30px;*/
+  margin-top: 12px;
+
+  border-top: 1px solid #808094;
 }
 
 .posts #post_meta {
-  color: #b2aeb6;
+  color: #808094;
   margin-top: 24px;
   font-size: 75%;
   margin-bottom: 24px;
@@ -140,7 +148,7 @@ h2 {
 
 .posts #title a:hover {
   text-decoration: none;
-  color: #903;
+  color: ##E0671B;
 }
 
 .posts #content {
@@ -153,8 +161,8 @@ h2 {
   margin-top: 30px;
 }
 
-#main .posts #title_and_content {
-  border-bottom: 1px solid #e8e8e8;
+.main .posts #title_and_content {
+  border-bottom: 1px solid #E8E8E8;
 }
 
 
@@ -173,7 +181,7 @@ h2 {
 }
 
 .archive #post_meta {
-  color: #b2aeb6;
+  color: #808094;
   font-size: 100%;
   font-style: italic;
 }
@@ -225,7 +233,7 @@ h2 {
 /* forms */
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 1px solid #808094;
   padding: 12px;
   height: auto !important;
   margin-bottom: 24px;
@@ -247,14 +255,17 @@ input, textarea, select, .uneditable-input {
 
 /* links */
 
+@linkColor: #503E2B;
+
 a:link {
   font-weight: bold;
+  color: #503E2B;
 }
 
 a:hover {
   text-decoration: none;
-  color: #903;
-  border-bottom: 1px dotted #903;
+  color: #E0671B;
+  border-bottom: 1px dotted #E0671B;
 }
 
 /* debug */
