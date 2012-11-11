@@ -37,7 +37,7 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.page(params[:page]).per_page(20)
+    @posts_by_month = Post.all.group_by { |post| post.created_at.strftime("%B %Y")}
   end
 
   def destroy

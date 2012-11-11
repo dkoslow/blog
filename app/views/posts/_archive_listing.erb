@@ -1,9 +1,12 @@
-<div id="post_wrapper">
-  <div id="post_meta">
-    <%= archive_listing.created_at.strftime("%d %B %Y") %>
-  </div>
-  <div id="title_and_content">
-    <div id="title"><%= link_to archive_listing.title, archive_listing%>
-    </div>
-  </div>
-</div>
+<% @posts_by_month.each do |month, posts| %>
+  <div id="month"><%= month %></div>
+  <ul>
+    <% posts.each do |posts| %>
+    <li>
+      <span><%= posts.created_at.strftime("%d %B %Y") %></span>
+      »
+      <%= link_to posts.title, posts %>
+    </li>
+    <% end %>
+  </ul>
+<% end %>

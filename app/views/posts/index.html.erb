@@ -1,14 +1,7 @@
 <div class="main">
-  <h2>Archive</h2>
   <div class="archive_wrapper">
-    <% if @posts.any? %>
-      <div class="archive">
-        <%= render partial: "archive_listing", collection: @posts %>
-      </div>
-      <div id="pagination-wrapper">
-        <%= will_paginate @posts,
-            page_links: false, container: false %>
-      </div>
-    <% end %>
+    <div class="archive">
+      <%= render partial: "archive_listing" %>
+    </div>
   </div>
 </div>
