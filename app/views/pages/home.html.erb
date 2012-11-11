@@ -6,12 +6,12 @@
     <div id="pagination-wrapper">
       <div id="previous">
         <% if @posts.previous_page %>
-          <%= link_to "<< Previous", params.merge(page: @posts.previous_page) %>
+          <%= link_to "« Previous", params.merge(page: @posts.previous_page) %>
         <% end %>
       </div>
       <div id="next">
         <% if @posts.next_page %>
-          <%= link_to "Next >>", params.merge(page: @posts.next_page) %>
+          <%= link_to "Next »", params.merge(page: @posts.next_page) %>
         <% end %>
       </div>
     </div>

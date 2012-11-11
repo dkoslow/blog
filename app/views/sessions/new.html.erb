@@ -13,21 +13,17 @@
   <% provide(:title, "Sign in") %>
   <h2>Sign in</h2>
 
-  <div class="row">
-    <div class= "span6 offset2">
-      <div id="signin">
-        <%= form_for(:session, url: sessions_path) do |f| %>
+    <div id="signin">
+      <%= form_for(:session, url: sessions_path) do |f| %>
 
-        <%= f.label :email %>
-        <%= f.text_field :email %>
+      <%= f.label :email %>
+      <%= f.text_field :email %>
 
-        <%= f.label :password %>
-        <%= f.password_field :password %></br>
+      <%= f.label :password %>
+      <%= f.password_field :password %></br>
 
-        <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
-        <% end %>
-      </div>
+      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+      <% end %>
     </div>
-  </div>
 
 <% end %>

@@ -29,7 +29,7 @@
     <div class="row">
       <div class="span6 offset3">
         <h1>
-          <%= link_to "DAN KOSLOW", root_path %>
+          <%= link_to "Dan Koslow", root_path %>
         </h1>
         <div class="navbar">
           <div class="navbar-inner">
@@ -52,15 +52,15 @@
             </div>
           </div>
         </div>
-     <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %>"><%= value %></div>
-     <% end %>
-    <%= yield %>
-    <%= debug(params) if Rails.env.development? %>
-    </div>
-    <div class="span2">
+        <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"><%= value %></div>
+        <% end %>
+        <%= yield %>
+        <div id="footer">
+          © Dan Koslow. All Rights Reserved.
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </body>
 </html>
