@@ -37,6 +37,7 @@ class PostsController < ApplicationController
   end
 
   def index
+    @posts = Post.all
     @posts_by_month = Post.all.group_by { |post| post.created_at.strftime("%B %Y")}
   end
 
