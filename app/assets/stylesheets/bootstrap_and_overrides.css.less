@@ -48,12 +48,17 @@ body {
 
 /* navbar */
 
-.navbar {
-	right: 0;
-	left: 0;
-  margin-bottom: 0px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #9E948A;
+.center.navbar .nav {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+.center .navbar-inner {
+    text-align:center;
+    background-color: #503E2B;
 }
 
 .navbar .navbar-inner{
@@ -63,8 +68,13 @@ body {
   box-shadow: none;
 }
 
+.navbar .nav li a:link {
+  color: white;
+}
+
 .navbar .nav li a:hover {
   background-color: #E0671B;
+  color: white;
 }
 
 .navbar .navbar-inner {
@@ -90,10 +100,10 @@ body {
   background-color: white;
 }
 
+
 @navbarBackground: #503E2B;
 @navbarText: white;
 @navbarLinkColor: white;
-
 
 /* header */
 
@@ -104,10 +114,10 @@ body {
 
 h1 {
   font-size: 130%;
-  margin-top: 18px;
-  padding-bottom: 18px;
-  border-top: 2px solid #9E948A;
-  text-align: left;
+  margin-top: 6px;
+  line-height: 66px;
+  border-top: 2px solid #503E2B;
+  text-align: center;
 }
 
 h1 a:hover {
