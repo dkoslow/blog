@@ -54,11 +54,15 @@ body {
     *display:inline; /* ie7 fix */
     *zoom:1; /* hasLayout ie7 trigger */
     vertical-align: top;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .center .navbar-inner {
     text-align:center;
-    background-color: #503E2B;
+    background-color: white;
+    border-top: 2px solid #503E2B;
+    border-bottom: 2px solid #9E948A;
 }
 
 .navbar .navbar-inner{
@@ -70,11 +74,11 @@ body {
 
 .navbar .nav li a:link {
   color: white;
+  text-shadow: none;
 }
 
 .navbar .nav li a:hover {
-  background-color: #E0671B;
-  color: white;
+  color: #E0671B;
 }
 
 .navbar .navbar-inner {
@@ -85,7 +89,6 @@ body {
 
 .nav li {
   font-size: 100%;
-  width: 72px;
   text-align: center;
   text-shadow: none;
 }
@@ -94,16 +97,11 @@ body {
   border-bottom: none;
 }
 
-.navbar .divider-vertical {
-  margin-left: 0px;
-  margin-right: 0px;
-  background-color: white;
-}
-
 
 @navbarBackground: #503E2B;
-@navbarText: white;
-@navbarLinkColor: white;
+@navbarText: #503E2B;
+@navbarLinkColor: #503E2B;
+@navbarHeight: 30px;
 
 /* header */
 
@@ -113,10 +111,9 @@ body {
 }
 
 h1 {
-  font-size: 130%;
-  margin-top: 6px;
-  line-height: 66px;
-  border-top: 2px solid #503E2B;
+  font-size: 240%;
+  padding-top: 12px;
+  line-height: 72px;
   text-align: center;
 }
 
@@ -124,19 +121,10 @@ h1 a:hover {
   border-bottom: none;
 }
 
-h2 {
-  margin-top: 30px;
-  font-size: 130%;
-  margin-bottom: 18px;
-  font-weight: bold;
-  line-height: 100%;
-}
-
-
 /* posts */
 
 .main {
-  margin-top: 42px;
+  margin-top: 36px;
 }
 
 .posts #post_meta {
@@ -151,7 +139,7 @@ h2 {
 }
 
 .posts #title {
-  font-size: 130%;
+  font-size: 135%;
   padding-bottom: 6px;
   margin-bottom: 9px;
   border-bottom: 1px solid #9E948A;
@@ -181,7 +169,7 @@ h2 {
 /* archive */
 
 #month {
-  font-size: 130%;
+  font-size: 135%;
   margin-bottom: 6px;
   line-height: 1.4em;
 }
@@ -238,7 +226,6 @@ li span {
 }
 
 #about_image {
-  margin-bottom: 18px;
   height: 63px;
   width: 54px;
   float: left;
@@ -248,7 +235,6 @@ li span {
 #about_text {
   font-size: 100%;
   line-height: 1.4em;
-  margin-left: 24px;
 }
 
 /* forms */
