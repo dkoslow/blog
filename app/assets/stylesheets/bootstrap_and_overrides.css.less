@@ -49,27 +49,28 @@ body {
 /* navbar */
 
 .center.navbar .nav {
-    float:none;
-    display:inline-block;
-    *display:inline; /* ie7 fix */
-    *zoom:1; /* hasLayout ie7 trigger */
-    vertical-align: top;
-    margin-left: 10px;
-    margin-right: 10px;
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.center .navbar-inner {
-    text-align:center;
-    background-color: white;
-    border-top: 2px solid #503E2B;
-    border-bottom: 2px solid #9E948A;
-}
-
-.navbar .navbar-inner{
+.center.navbar .navbar-inner {
+  text-align:center;
+  background-color: white;
+  border-top: 2px solid #503E2B;
+  border-bottom: 2px solid #9E948A;
   background-image: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  filter: none;
+  .border-radius(0);
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .navbar .nav li a:link {
@@ -79,22 +80,13 @@ body {
 
 .navbar .nav li a:hover {
   color: #E0671B;
-}
-
-.navbar .navbar-inner {
-	.border-radius(0);
-  padding-left: 0px;
-  padding-right: 0px;
+  border-bottom: none;
 }
 
 .nav li {
   font-size: 100%;
   text-align: center;
   text-shadow: none;
-}
-
-.nav a:hover {
-  border-bottom: none;
 }
 
 
