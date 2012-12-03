@@ -1,3 +1,5 @@
+<% unless ENV["NEW_RELIC_LICENSE_KEY"].nil? %>
+
 # Here are the settings that are common to all environments
 common: &default_settings
   # ============================== LICENSE KEY ===============================
@@ -253,3 +255,5 @@ staging:
   <<: *default_settings
   monitor_mode: false
   app_name: <%= ENV["NEW_RELIC_APP_NAME"] %> (Staging)
+
+<%end%>
