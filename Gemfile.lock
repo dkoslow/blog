@@ -146,6 +146,7 @@ GEM
       net-ssh (>= 1.99.1)
     net-ssh (2.6.1)
     netrc (0.7.5)
+    newrelic_rpm (3.5.2.17)
     nokogiri (1.5.5)
     orm_adapter (0.4.0)
     pg (0.12.2)
@@ -265,6 +266,7 @@ DEPENDENCIES
   heroku
   jquery-rails
   mini_magick
+  newrelic_rpm
   pg (= 0.12.2)
   pry-nav (= 0.2.0)
   pry-rails (= 0.1.6)
