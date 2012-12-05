@@ -8,6 +8,9 @@
     <div id="post_meta">
       <i class="icon-time"></i>
       Posted: <%= post.created_at.strftime("%d %B %Y") %>
+      »
+      <%= link_to "", post_path(post,
+                anchor: "disqus_thread")%>
     </div>
   </div>
 </div>
